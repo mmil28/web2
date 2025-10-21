@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get(url: '\fakultas', action: [FakultasController::class, 'index']);
+Route::get(uri: '/fakultas', action: [FakultasController::class, 'index'])-> name(name: 'fakultas.index');
