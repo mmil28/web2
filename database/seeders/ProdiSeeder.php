@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Prodi;
 
 class ProdiSeeder extends Seeder
 {
@@ -21,7 +22,7 @@ class ProdiSeeder extends Seeder
             ['fakultas_id'=>2, 'nama_prodi'=>'Bisnis Digital', 'jenjang_id' => 5],
         ];
         foreach($prodi as $item){
-            \App\Models\Prodi::create($item);
+            Prodi::create($item);
         }
     }
 }
